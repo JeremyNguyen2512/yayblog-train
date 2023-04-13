@@ -22,10 +22,12 @@ if ( ! wp_installing() ) {
     add_action(
         'plugins_loaded',
         function () {
-            include YAY_BLOG_PLUGIN_PATH . 'includes/admin/settings.php';
+           // include YAY_BLOG_PLUGIN_PATH . 'includes/admin/settings.php';
             include YAY_BLOG_PLUGIN_PATH . 'includes/admin/edit-star.php';
             include YAY_BLOG_PLUGIN_PATH . 'includes/frontend/post.php';
             include YAY_BLOG_PLUGIN_PATH . 'includes/frontend/view-counter.php';
         }
     );
 }
+
+require_once YAY_BLOG_PLUGIN_PATH.'classes/class-create-admin-menu.php';
