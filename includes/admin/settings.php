@@ -12,8 +12,8 @@
     public function yayblog_init_menu(){
         add_submenu_page(
             'options-general.php',
-            _('YayTrain Blog', 'yayblog'),
-            _('YayTrain Blog', 'yayblog'),
+            __('YayTrain Blog', 'yayblog'),
+            __('YayTrain Blog', 'yayblog'),
             'manage_options',
             'yayblog',
             [$this, 'yayblog_admin_page']
