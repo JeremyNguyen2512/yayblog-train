@@ -6,15 +6,15 @@
     global $uiOption;
 
     $reviewOption = array(
-        '5'   => _('Out of 5', 'yayblog'),
-        '10'  => _('Out of 10', 'yayblog'),
+        '5'   => __('Out of 5', 'yayblog'),
+        '10'  => __('Out of 10', 'yayblog'),
     )   ;
 
     
     $uiOption = array(
-        'tooltip'   => _('Tooltip','yayblog'),
-        'icon'      => _('Icon','yayblog'),
-        'badge'     => _('Badge','yayblog'),
+        'tooltip'   => __('Tooltip','yayblog'),
+        'icon'      => __('Icon','yayblog'),
+        'badge'     => __('Badge','yayblog'),
     );
 
     $reviewSetting = get_option('yayblog_review');
