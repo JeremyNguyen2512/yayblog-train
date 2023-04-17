@@ -1,0 +1,45 @@
+:root{
+    --yay-primary: #ffc71a;
+}
+
+#icon-template span{
+    display: inline-block;
+    margin-right: 7px;
+    font-size: 25px;
+}
+
+#tooltip-template{
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 25px;
+    padding: 7px 15px;
+    background: var(--yay-primary);
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    max-width: max-content;
+    margin-left: 5px;
+}
+
+#tooltip-template::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--yay-primary);
+    top: -10px;
+    left: 0;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+#badge-template{
+    margin: 10px 0;
+    font-size: 23px;
+}
+#badge-template span{
+    display: inline-block;
+    padding: 3px 10px;
+    margin-right: 5px;
+    border: 1px dashed var(--yay-primary);
+    
+}
